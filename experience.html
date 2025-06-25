@@ -25,12 +25,22 @@
       z-index: -1;
     }
     .nav-link {
-      color: #f5f5dc !important;
-    }
-    .nav-link.active {
-      color: #ffc107 !important;
-      font-weight: bold;
-    }
+  color: #f5f5dc !important;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  padding: 5px 15px;
+  transition: all 0.3s ease;
+}
+.nav-link.active {
+  background-color: #ffc107;
+  color: #111 !important;
+  font-weight: bold;
+}
+.nav-link:hover {
+  border-color: #ffc107;
+  background-color: #222;
+  color: #ffc107 !important;
+}
     .drop {
       display: inline-block;
       opacity: 0;
